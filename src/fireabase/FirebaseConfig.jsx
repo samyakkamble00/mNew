@@ -1,6 +1,10 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import {getFirestore} from 'firebase/firestore';
+import {getAuth} from 'firebase/auth';
+
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCNUH6JMyIa817twYUpKBDa65QoLUOxvhg",
   authDomain: "messthali-6d8fb.firebaseapp.com",
@@ -8,9 +12,13 @@ const firebaseConfig = {
   storageBucket: "messthali-6d8fb.appspot.com",
   messagingSenderId: "1085344841512",
   appId: "1:1085344841512:web:8c4f4187c32252f3fe5a1d",
-  measurementId: "G-GKFSXZJW70",
+  measurementId: "G-GKFSXZJW70"
 };
+
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 const fireDB = getFirestore(app);
 const auth = getAuth(app);
-export { fireDB, auth };
+
+export {fireDB, auth}
